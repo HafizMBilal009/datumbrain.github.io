@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Defining Implicit JSON Format for Case Classes Exceeding 22 Members
+title: Using Jsonx w/ Case Classes Having > 22 Members
 author: Fahad Siddiqui
 date: "2018-10-22 16:58:00"
 ---

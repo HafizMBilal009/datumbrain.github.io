@@ -6,7 +6,6 @@ authorUrl: https://github.com/fahadsiddiqui
 date: "2019-10-16 23:42:00"
 ---
 
-
 ## /dev/urandom
 
 Quoting die (dot) net:

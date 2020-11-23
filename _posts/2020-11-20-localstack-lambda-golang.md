@@ -13,15 +13,16 @@ Before following the article, you should have
 1. `python` & `pip`
 2. `docker.io`
 3. `docker-compose`
-4. `go` 
+4. `go`
 5. AWS CLI or `awslocal`
 
 Installed on your system.
 
-> The reason why `awslocal` makes it a lot easier to play with AWS commands is, you don't have to specify `--endpoint-url` each and everytime you need to 
+> The reason why `awslocal` makes it a lot easier to play with AWS commands is, you don't have to specify `--endpoint-url` each and everytime you need to
 > access, invoke or create a AWS resource.
 >
 > Thanks to [localstack.cloud](https://localstack.cloud) for creating this utility for us.
+>
 > ```
 > pip install awslocal
 > ```
@@ -79,9 +80,7 @@ go mod download       # will fetch all dependencies
 
 ### Localstack
 
-The easiest way to start the localstack container might be using their pip package.
-
-#### Install Localstack pip Package
+#### Install Localstack
 
 ```bash
 pip install localstack
@@ -93,7 +92,7 @@ pip install localstack
 localstack start
 ```
 
-If you need services like AWS Lambda, AWS API Gateway, or may be S3 - you may pass an environment variable 
+If you need services like AWS Lambda, AWS API Gateway, or may be S3 - you may pass an environment variable
 
 ```bash
 SERVICES=lambda,apigateway,s3 localstack start
@@ -101,13 +100,13 @@ SERVICES=lambda,apigateway,s3 localstack start
 
 #### Run Localstack Using Docker Compose
 
-You can define your own docker-compose file to run localstack 
+You can define your own docker-compose file to run localstack
 
 ```yml
 version: "3.3"
 
 services:
-  rsaas-localstack:
+  mylocalstack:
     container_name: mylocalstack
     image: localstack/localstack
     network_mode: bridge

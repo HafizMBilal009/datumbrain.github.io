@@ -1,42 +1,17 @@
 # Datum Brain's Official Blog ![](https://travis-ci.com/datumbrain/datumbrain.github.io.svg?branch=master)
 
-# How to Post
+## Local Setup
 
-Get the latest from master
-```
-git pull origin master
-```
+For complete Jekyll setup follow along [this](https://jekyllrb.com/).
 
-Create a new branch with the following format.
+> Make sure you have latest version Ruby installed.
 
-```
-post/whatever-post-title-is
-```
+## Development Run
 
-## Creating New Post
-
-New posts go in `_posts` directory. Every single post is actually a file of the format<br><br>
-
-```
-YYYY-MM-DD-whatever-post-title.md
-```
-
-Write your post in markdown syntax
-
-## Testing Locally
-
-To test what you have created locally. Run <br>
+To run it on your system (with hot-reloading),
 
 ```
 bundle exec jekyll serve
 ```
 
-The application is accessible at `http://localhost:4000/`
-
-## Publish
-
-Once everything went as expected, push your branch and create a pull request. Feel free to add a reviewer.
-
-## More
-
-To learn more what goes in a post. Please refer to [jekyll docs](https://jekyllrb.com/docs/)
+> The site will be accessible at [http://localhost:4000](http://localhost:4000).

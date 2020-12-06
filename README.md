@@ -1,3 +1,5 @@
+# Datum Brain's Official Blog ![](https://travis-ci.com/datumbrain/datumbrain.github.io.svg?branch=master)
+
 # How to Post
 
 Get the latest from master

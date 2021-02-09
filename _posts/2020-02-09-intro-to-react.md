@@ -10,29 +10,30 @@ date: "2020-02-09 12:40:31"
 
 ## Pre-requisites
 
-Basic knowledge of :
-
 - HTML
-- Javascript
+- JavaScript
 
 ## Why React?
 
-React was introduced by Facebook in 2013. Due to its readable syntax & code reusability, It has become one of the most popular & most used libraries for front-end development.
+React was introduced by Facebook in 2013. Due to its readable syntax & code re-usability, it has become one of the most popular & most used libraries for front-end development.
 React has a very strong community on the internet world so most issues during development are solved quickly.
-React is easy to learn as its JSX (Javascript XML) syntax is very close to HTML and enhances the confidence of a novice developer.
+React is easy to learn as its JSX (JavaScript XML) syntax is very close to HTML and enhances the confidence of a novice developer.
 
 ## Basic Concepts of React
 
-We will discuss some basic fundamental concepts of React :
+We will discuss some basic fundamental concepts of React:
 
 ### 1. Components
 
-Components are building blocks of a React app. A component has one or more than one element of HTML to re-use it wherever needed. With the use of components, we get rid of writing redundant code. There are two types of components i.e Class Components and Functional Components
+Components are building blocks of a React app. A component has one or more than one element of HTML to re-use it wherever needed. With the use of components, we get rid of writing redundant code. There are two types of components:
+
+- Class Components
+- Functional Components
 
 ### 2. JSX
 
-JSX is a way to write React code. As from it's name we can understand it's a mixture of Javascript and XML as a result of a syntax which is easy to understand.
-For example :
+JSX is a way to write React code. As from its name we can understand it's a mixture of JavaScript and XML as a result of a syntax which is easy to understand
+For example:
 
 ```jsx
 const element = <h1>Welcome to React World!</h1>;
@@ -40,17 +41,17 @@ const element = <h1>Welcome to React World!</h1>;
 
 ### 3. Props
 
-Props are arguments we can pass into React components. Basically props are used for connecting different components by passing some as an attribute to a React component.
-One component passes a value to the other one and other component can use this value in it.
+Props are arguments we can pass into React components. Basically props are used for connecting different components by passing some value as an attribute to a React component.
+One component can pass value in the other
 
 ### 4. State
 
-State is the heart of a React app. Basically, state is used to store data which is required in our React component. Using state, changes in data can be seen in real-time without refreshing webpage.
+State is the heart of a React app. Basically, state is used to store data which is required in our React component. Using state, changes in data can be seen in real-time without refreshing webpage
 
 ## Enough Talk, Let's Code
 
 We will build a simple React app which shows a list of quotes with their authors. We can add a quote and see a live update in the quotes table.
-Let's start by creating a simple React app by running this command :
+Let's start by creating a simple React app by running this command:
 
 ```bash
 yarn create react-app my-app
@@ -65,7 +66,7 @@ yarn start
 This starts your app at http://localhost:3000/
 A simple React app has been created but we will customize it!
 Open this folder in your favourite code editor.
-Remove everything from return statement of `App.js` and refactor code as :
+Remove everything from return statement of `App.js` and refactor code as:
 
 ```jsx
 import React, { useState } from "react";
@@ -118,7 +119,7 @@ export default QoutesTable;
 ```
 
 This component will render quotes table. `map` function iterates each element of `quotesList` array and returns a `tr` containing quote and its author.
-Residing in components directory, create a file named `Data.js` and add some dummy data in it :
+Residing in components directory, create a file named `Data.js` and add some dummy data in it:
 
 ```js
 export const data = [
@@ -139,7 +140,7 @@ export const data = [
 ];
 ```
 
-Now create a component named `AddQuote.js` and write following code :
+Now create a component named `AddQuote.js` and write following code:
 
 ```jsx
 import React, { useState } from "react";
@@ -210,4 +211,4 @@ table {
 }
 ```
 
-You can get this code on [Github](https://github.com/HafizMBilal009/my-app.git)
+[Here](https://github.com/HafizMBilal009/my-app.git) is the code repository you can use following this blog.

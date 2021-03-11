@@ -8,7 +8,7 @@ date: "2021-03-10 19:50:32"
 
 While working on a React App, following these coding conventions will give you a better development experience
 
-## Visual Studio Code is Highly Recommended as IDE
+## VS Code is Highly Recommended as IDE
 
 Visual Studio Code has several features that a React developer loves. It gives a lot of useful extensions to make the development environment better. For React, here are some useful extensions which will assist you during development
 
@@ -16,7 +16,7 @@ Visual Studio Code has several features that a React developer loves. It gives a
 - ES Lint
 - JavaScript (ES6) code snippets
 - Reactjs code snippets
-- Auto Import
+- Auto import
 
 ## Use ES6 Syntax
 
@@ -46,7 +46,7 @@ const name = "Bilal";
 console.log(`My name is ${name}`);
 ```
 
-### Use `const` & `let`
+### Use <em>const</em> & <em>let</em>
 
 They have block scope. Variables with `const` declaration can't be changed but with `let`, they are mutable
 
@@ -99,7 +99,7 @@ const person = { name, age, designation, workingHours };
 
 You will experience many features and flexibility in ES6 syntax
 
-## Don't Forget `key` Prop With `map` in JSX
+## Don't Forget <em>key</em> Prop With <em>map</em> in JSX
 
 Always add `key` prop to every JSX element while mapping from an array. Read [this article](https://dev.to/francodalessio/understanding-the-importance-of-the-key-prop-in-react-3ag7) for better understanding
 
@@ -114,7 +114,7 @@ const years = [2021, 2022];
 </ul>;
 ```
 
-## Component Name Should be in `PascalCase`
+## Component Name Should be in <em>PascalCase</em>
 
 ```jsx
 const helloText = () => <div>Hello</div>; // wrong
@@ -122,7 +122,7 @@ const helloText = () => <div>Hello</div>; // wrong
 const HelloText = () => <div>Hello</div>; // correct
 ```
 
-## Variable & Function Names Should be in `camelCase`
+## Variable & Function Names Should be in <em>camelCase</em>
 
 ```jsx
 const working_hours = 10; // bad approach
@@ -134,7 +134,7 @@ const get_sum = (a, b) => a + b; // bad approach
 const getSum = (a, b) => a + b; // good approach
 ```
 
-## ID & Class Names Should be in `kebab-case`
+## ID & Class Names Should be in <em>kebab-case</em>
 
 ```html
 <!--bad approach-->
@@ -144,7 +144,7 @@ const getSum = (a, b) => a + b; // good approach
 <div className="hello-word" id="hello-world">Hello World</div>
 ```
 
-## Always Check `null` & `undefined` for Objects & Arrays
+## Always Check <em>null</em> & <em>undefined</em> for Objects & Arrays
 
 Neglecting `null` and `undefined` in the case of objects & arrays can lead to errors.
 
@@ -207,7 +207,7 @@ const [isValid, setIsValid] = useState(false);
 
 Set `isValid` false or true where you have logic of validating a value
 
-## Always Remove Every Event Listener in `useEffect`
+## Always Remove Every Event Listener in <em>useEffect</em>
 
 Don't forget to write cleanup function in `useEffect` to remove event listener you added before
 
@@ -219,7 +219,7 @@ useEffect(() => {
 });
 ```
 
-## Use a Generic Component Instead of Repeating Code
+## Avoid Repetition, Use Generic Components
 
 It is the best thing to make your code cleaner. Write a generic component for similar group of elements and render them on the basis of `props`
 passed to it
@@ -261,7 +261,7 @@ Sometimes you need a utility at more than one time across your React App.
 
 To deal with this scenario efficiently, Write a helper function in a separated file named `helper-functions.js`, import wherever you want to use it and call that function in it.
 
-## Use Ternary Operator Instead of `if/else if` Statements
+## Use Ternary Operator Instead of <em>if/else if</em> Statements
 
 Using `if/else if` statements makes your code bulky. Instead try to use ternary operator where possible to make code simpler & cleaner
 
@@ -279,7 +279,7 @@ if (name === "Ali") {
 name === "Ali" ? 1 : name === "Bilal" ? 2 : 3;
 ```
 
-## Make `index.js` File Name to Minimize Importing Complexity
+## Make <em>index.js</em> File Name to Minimize Importing Complexity
 
 If you have a file named `index.js` in a directory named `actions` and you want to import action from it in your component, your import would be like this
 
@@ -338,7 +338,7 @@ const Message = () => {
 };
 ```
 
-## Use `===` Operator instead of `==`
+## Use <em>===</em> Operator instead of <em>==</em>
 
 While comparing two values, strictly checking both values and their data types is a good practice.
 
